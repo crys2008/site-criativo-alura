@@ -1,3 +1,22 @@
-header{background-color: rgb(25, 25, 251);
-color : white;
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+.cabeçalho{background-color: rgb(255, 255, 255);
+color : rgb(3, 34, 206);
+display: flex;
+padding: 24px 0;
+}
+.cabeçalho-imagem{
+    width: 27%;
+    
+}
+.cabeçalho-lista-item{
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 30px;
+
 }
