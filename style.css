@@ -1,22 +1,121 @@
-*{
-    margin: 0%;
-    padding: 0%;
+/* Resetando margens e paddings */
+* {
+    margin: 2;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-
-
-.cabeçalho{background-color: rgb(255, 255, 255);
-color : rgb(3, 34, 206);
-display: flex;
-padding: 24px 0;
+/* Estilo do corpo */
+body {
+    background-color: #afccae;
+    color: #010a1f;
+    line-height: 1.6;
 }
-.cabeçalho-imagem{
-    width: 27%;
-    
-}
-.cabeçalho-lista-item{
-    display: inline-block;
-    margin: 0 20px;
-    font-size: 30px;
 
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #0b5904;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header h1 {
+    float: left;
+    margin-top: 0;
+}
+
+/* Seções */
+section {
+    padding: 20px 0;
+    border-bottom: #ddd 1px solid;
+}
+
+section#home {
+    background: url('background.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    height: 400px;
+}
+
+section#home h2 {
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+section#home p {
+    font-size: 20px;
+}
+
+/* Itinerário e Sobre */
+section h2 {
+    color: 0b59043;
+}
+
+section p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p, footer ul {
+    margin-bottom: 10px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+/* Links de navegação */
+nav ul li a:hover {
+    color: #000000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1, header nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    header ul {
+        margin-top: 20px;
+    }
 }
